@@ -68,7 +68,6 @@ const WS = require('ws')
 const port = 8080
 const { randomText, randomNumber } = require("./randomGenerator")
 const wss = new WS.Server({ port: port })
-let players = [];
 wss.on("connection", ws => {
     //on connection
     console.log("New player connected.");
