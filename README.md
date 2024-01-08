@@ -94,3 +94,4 @@ wss.on("connection", ws => {
 
 console.log("Listening on", port);
 </code>
+<p>Don't forget to install the WS dependency: <i> <code>npm i ws </code></i></p>
