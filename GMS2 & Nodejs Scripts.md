@@ -55,7 +55,6 @@
 	var data = ds_map_create();
 	data[? "eventName"] = _eventName;
 	data[? "payload"] = _data
-	//do something
 	buffer_write(Buffer, buffer_text, json_encode(data));
 	network_send_raw(socket, Buffer, buffer_tell(Buffer));
 	ds_map_destroy(data);
